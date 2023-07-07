@@ -19,14 +19,10 @@ var nextSong = function(currentSong) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('NAZDAR')
-
     var songs = document.querySelectorAll('#playlist li li');
 
     for (let i = 0; i < songs.length; i++) {
-        console.warn('Adding click')
         songs[i].addEventListener("click", function(e) {
-            console.warn('click')
             playSong(e.target)
         })
     }
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('DOMContentLoaded', function() {
         songId = document.location.hash
-        console.log(songId)
         if (songId) {
             playSong(document.querySelector(songId), true)
         } else {
