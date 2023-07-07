@@ -1,66 +1,182 @@
+html {
+    font: 16px Arial, sans-serif;
+
+    --mod: 1.618rem;
+    --mod-half: 0.809rem;
+    --mod-double: 3.236rem;
+    --mod-quarter: 0.405rem;
+    --mod-onenhalf: 2.427rem;
+
+    --col-white: white;
+    --col-red: #f03e25;
+    --col-ylw: #f9f66e;
+    --col-drkylw: #fbbd25;
+    --col-blue: #21087f;
+    --col-drkblue: #1e184c;
+}
+
 html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
 }
 
 body {
-	color: #333;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: var(--col-drkblue);
+    line-height: var(--mod);
 }
 
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+#wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-a:hover {
-	text-decoration: underline;
+#content {
+    background:var(--col-white);
+    display: block;
+    flex: 1 1 100%;
 }
 
-a:visited {
-	color: rgb(0,80,160);
+#content > header {
+    height: var(--mod-double);
+    background: var(--col-blue) no-repeat ;
+    background-image: url("logo-full.svg");
+    background-size: auto var(--mod-double);
+    /* margin-bottom: var(--mod); */
 }
 
-label {
-	display: block;
+#content > div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+#content > div > main {
+    flex: 1 1 40%;
+    max-width: calc(32 * var(--mod));
 }
 
-input:disabled {
-	color: #ccc;
+#content > div > aside {
+    flex: 1 1 30%; 
+    max-width: calc(16 * var(--mod));
 }
 
-input[type="range"] {
-	height: 0;
+main > header {
+    font-size: var(--mod);
+    line-height: var(--mod-double);
+    padding: var(--mod-quarter) var(--mod-half);
 }
 
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+article > header {
+    font-size: var(--mod-half);
+    text-transform: uppercase;
 }
 
-button:disabled {
-	color: #999;
+#about-band p {
+    padding: var(--mod-quarter) var(--mod-half);
 }
 
-button:not(:disabled):active {
-	background-color: #ddd;
+#about-band p.gallery {
+    text-align: center;
+}
+#about-band p.gallery img {
+    max-width: 100%;
 }
 
-button:focus {
-	border-color: #666;
+audio {
+    width: 100%;
+    display: block;
+    background-color: var(--col-blue);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background: white;
+
+}
+
+article > header {
+    padding: var(--mod-quarter) var(--mod-half);
+    
+}
+
+#player > header {
+    background: #1b162d;
+    background-color: var(--col-drkblue);
+    color: var(--col-white);
+    font-size: inherit;
+    text-transform: inherit;
+}
+
+#playlist {
+    background: var(--col-ylw);
+}
+#playlist > header {
+    background: var(--col-drkylw);
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#playlist > ul > li {
+    padding: var(--mod-half) 0;
+}
+#playlist > ul > li > header, #playlist > ul > li > p {
+    padding: 0 var(--mod-half);
+}
+.album-name {
+    font-weight: bold;
+}
+.album-details {
+    font-size: var(--mod-half);
+    color: rgba(0,0,0,0.6);
+}
+
+#playlist > ul ul > li {
+    padding: 0 var(--mod-half) 0 var(--mod-onenhalf);
+    margin: var(--mod-quarter) 0;
+    list-style-type: disc;
+    cursor: pointer;
+    background: transparent url("play-icon.svg") no-repeat var(--mod-half) center;
+    background-size: var(--mod-half) auto;
+    display: flex;
+}
+#playlist > ul ul > li:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+#playlist > ul ul > li:first-child {
+    border-top: 0 none;
+}
+.song-info {
+    flex: 1 1 var(--mod-double);
+    pointer-events: none;
+    max-width: 24rem;
+}
+.song-name {
+    font-size: var(--mod-half);
+}
+.song-details {
+    font-size: var(--mod-half);
+    color: rgba(0,0,0,0.6);
+}
+.song-duration {
+    display: flex;
+    font-size: var(--mod-half);
+    flex: 0 0 var(--mod-double);
+    align-items: center;
+    justify-content: end;
+    pointer-events: none;
+}
+#performances > header {
+    background: var(--col-blue);
+    color: white;
+}
+#performances > ul > li {
+    padding: var(--mod-quarter) var(--mod-half);
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="play-icon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="16"
+     inkscape:cx="36.09375"
+     inkscape:cy="31.59375"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid259" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path4055"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.254"
+       d="M 6.6145832,0.26458333 A 6.3499997,6.3499997 0 0 0 0.26458333,6.6145832 6.3499997,6.3499997 0 0 0 6.6145832,12.964583 6.3499997,6.3499997 0 0 0 12.964583,6.6145832 6.3499997,6.3499997 0 0 0 6.6145832,0.26458333 Z m 0,0.76199997 A 5.5880004,5.5880004 0 0 1 12.202583,6.6145832 5.5880004,5.5880004 0 0 1 6.6145832,12.202583 5.5880004,5.5880004 0 0 1 1.0265833,6.6145832 5.5880004,5.5880004 0 0 1 6.6145832,1.0265833 Z" />
+    <path
+       style="fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 5.0531748,3.9687499 c -0.2384918,0.2645833 -0.2384918,5.0270832 0,5.2916666 C 5.2916666,9.5249999 9.0480162,6.8791663 9.0219247,6.6145831 8.9958332,6.3499999 5.2916666,3.7041666 5.0531748,3.9687499 Z"
+       id="path4513"
+       sodipodi:nodetypes="zzzz" />
+  </g>
+</svg>
